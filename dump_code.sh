@@ -14,7 +14,12 @@ echo "=== Code Dump - $(date) ===" >> "$OUTPUT"
 echo "=== Projeto: $(basename "$PROJECT_ROOT") ===" >> "$OUTPUT"
 echo "" >> "$OUTPUT"
 
+OUTPUT_BASENAME="$(basename "$OUTPUT")"
+
 git -C "$PROJECT_ROOT" ls-files | while read -r file; do
+  # Pula o próprio arquivo de saída para evitar loop infinito
+  [ "$(basename "$file")" = "$OUTPUT_BASENAME" ] && continue
+
   # Pula binários e arquivos indesejados
   case "$file" in
     *.png|*.jpg|*.jpeg|*.gif|*.svg|*.ico|*.woff|*.woff2|*.ttf|*.eot|*.DS_Store) continue ;;
