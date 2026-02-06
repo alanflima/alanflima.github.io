@@ -1,87 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alan Ferreira - iOS Developer</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #F5F5F7;
-            color: #1D1D1F;
-        }
-
-        .card {
-            text-align: center;
-            padding: 40px;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-        }
-
-        h1 {
-            margin: 0 0 10px 0;
-            font-weight: 700;
-        }
-
-        p {
-            color: #86868B;
-            margin-bottom: 30px;
-        }
-
-        .btn-group {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: center;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #e5e5e5;
-            color: #333;
-            text-decoration: none;
-            border-radius: 20px;
-            font-weight: 500;
-            font-size: 14px;
-            transition: 0.2s;
-            width: 200px;
-        }
-
-        .btn:hover {
-            background: #d1d1d6;
-        }
-
-        .subtitle {
-            font-size: 12px;
-            color: #888;
-            margin-top: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Ferreira — macOS Developer</title>
+  <meta name="description" content="Construindo o futuro da produtividade no macOS. ClipDock, NanoShell e SideBay.">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="card">
-        <h1>Alan Ferreira</h1>
-        <p>iOS & macOS Developer</p>
+  <div class="ambient"></div>
 
-        <div class="subtitle">Ocean Suite Policies</div>
-        <br>
-        <div class="btn-group">
-            <a href="nanoshell/privacy.html" class="btn">NanoShell Privacy</a>
-            <a href="clipharbor/privacy.html" class="btn">ClipHarbor Privacy</a>
-            <a href="sidebay/privacy.html" class="btn">SideBay Privacy</a>
-        </div>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="/" class="header-logo">
+        <span class="logo-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 1L14 5V11L8 15L2 11V5L8 1Z" fill="white" opacity="0.9"/>
+          </svg>
+        </span>
+        Ocean Suite
+      </a>
+      <button class="mobile-toggle" onclick="document.querySelector('.header-nav').classList.toggle('open')" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="header-nav">
+          <li><a href="#apps">Apps</a></li>
+          <li><a href="contact.html">Suporte</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <span class="label">Alan Ferreira</span>
+    <h1>Construindo o futuro da <span class="text-gradient">produtividade</span> no macOS.</h1>
+    <p>Ferramentas nativas, rápidas e privadas que se integram perfeitamente ao seu fluxo de trabalho.</p>
+    <div class="hero-cta">
+      <a href="#apps" class="btn btn-primary">Conheça a Suite</a>
+      <a href="contact.html" class="btn btn-secondary">Contato</a>
+    </div>
+  </section>
+
+  <!-- Ocean Suite — Bento Grid -->
+  <section class="section" id="apps">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="label">Ocean Suite</span>
+        <h2>Cada app, um propósito.</h2>
+        <p>Três ferramentas projetadas para transformar como você usa o macOS — sem telemetria, sem nuvem.</p>
+      </div>
+
+      <div class="bento">
+        <!-- ClipDock — Featured -->
+        <div class="bento-card featured">
+          <div class="card-icon">📋</div>
+          <h3>ClipDock</h3>
+          <p class="card-subtitle">Porto seguro do seu Clipboard. Gerencie, busque e organize tudo que você copia — com acesso instantâneo via atalho global. Snippets inteligentes, histórico persistente e zero dados enviados para a nuvem.</p>
+          <div class="card-tags">
+            <span class="tag">Clipboard</span>
+            <span class="tag">Snippets</span>
+            <span class="tag">Offline</span>
+          </div>
+          <a href="clipdock/" class="card-link">
+            Ver App <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <!-- NanoShell -->
+        <div class="bento-card">
+          <div class="card-icon">⚡</div>
+          <h3>NanoShell</h3>
+          <p class="card-subtitle">Terminal reinventado. Leve, rápido e focado — execute comandos e scripts sem sair do contexto.</p>
+          <div class="card-tags">
+            <span class="tag">Terminal</span>
+            <span class="tag">Scripts</span>
+          </div>
+          <a href="nanoshell/" class="card-link">
+            Ver App <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <!-- SideBay -->
+        <div class="bento-card">
+          <div class="card-icon">🪟</div>
+          <h3>SideBay</h3>
+          <p class="card-subtitle">Gestão de janelas fluida. Organize, redimensione e encaixe suas janelas com precisão — sem atrito.</p>
+          <div class="card-tags">
+            <span class="tag">Windows</span>
+            <span class="tag">Layout</span>
+          </div>
+          <a href="sidebay/" class="card-link">
+            Ver App <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2026 Alan Ferreira. All rights reserved.</span>
+      <ul class="footer-links">
+        <li><a href="contact.html">Suporte</a></li>
+        <li><a href="clipdock/privacy.html">ClipDock Privacy</a></li>
+        <li><a href="nanoshell/privacy.html">NanoShell Privacy</a></li>
+        <li><a href="sidebay/privacy.html">SideBay Privacy</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 
 </html>
