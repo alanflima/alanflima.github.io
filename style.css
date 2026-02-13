@@ -669,6 +669,42 @@ h1, h2, h3, h4 {
 }
 
 
+/* --- Pricing --- */
+.product-pricing {
+  margin-bottom: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.price-desc {
+  font-size: 0.9rem;
+  color: var(--text-tertiary);
+}
+
+.card-price {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.trial-text {
+  margin-top: var(--space-md);
+  font-size: 0.85rem;
+  color: var(--text-tertiary);
+}
+
+
 /* ==========================================================================
    Responsive
    ========================================================================== */
