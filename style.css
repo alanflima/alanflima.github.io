@@ -6,43 +6,43 @@
 /* --- Design Tokens --- */
 :root {
   /* Colors — Ocean Dark */
-  --bg:            #05050A;
-  --bg-surface:    #0F111A;
-  --bg-surface-2:  #161926;
-  --bg-hover:      #1A1D2E;
+  --bg: #05050A;
+  --bg-surface: #0F111A;
+  --bg-surface-2: #161926;
+  --bg-hover: #1A1D2E;
 
-  --accent-start:  #2E9AFF;
-  --accent-end:    #06B6D4;
-  --accent:        linear-gradient(135deg, var(--accent-start), var(--accent-end));
+  --accent-start: #2E9AFF;
+  --accent-end: #06B6D4;
+  --accent: linear-gradient(135deg, var(--accent-start), var(--accent-end));
 
-  --text:          #F8FAFC;
-  --text-secondary:#94A3B8;
+  --text: #F8FAFC;
+  --text-secondary: #94A3B8;
   --text-tertiary: #64748B;
 
-  --border:        rgba(148, 163, 184, 0.08);
+  --border: rgba(148, 163, 184, 0.08);
   --border-accent: rgba(46, 154, 255, 0.25);
-  --glow:          rgba(46, 154, 255, 0.15);
+  --glow: rgba(46, 154, 255, 0.15);
 
   /* Typography */
   --font: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto,
-          Helvetica, Arial, sans-serif;
+    Helvetica, Arial, sans-serif;
   --mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
 
   /* Spacing */
-  --space-xs:  0.25rem;
-  --space-sm:  0.5rem;
-  --space-md:  1rem;
-  --space-lg:  1.5rem;
-  --space-xl:  2rem;
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
   --space-2xl: 3rem;
   --space-3xl: 4rem;
   --space-4xl: 6rem;
 
   /* Radii */
-  --radius-sm:  8px;
-  --radius-md:  12px;
-  --radius-lg:  16px;
-  --radius-xl:  24px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
   --radius-pill: 100px;
 
   /* Transitions */
@@ -98,7 +98,10 @@ button {
 
 
 /* --- Typography --- */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 1.15;
@@ -269,11 +272,11 @@ h1, h2, h3, h4 {
 .btn-primary {
   background: var(--accent);
   color: #fff;
-  box-shadow: 0 0 20px var(--glow), 0 4px 12px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px var(--glow), 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .btn-primary:hover {
-  box-shadow: 0 0 30px var(--glow), 0 8px 24px rgba(0,0,0,0.4);
+  box-shadow: 0 0 30px var(--glow), 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
 .btn-secondary {
@@ -339,7 +342,7 @@ h1, h2, h3, h4 {
 .bento-card:hover {
   transform: translateY(-4px);
   border-color: var(--border-accent);
-  box-shadow: 0 0 40px var(--glow), 0 20px 40px rgba(0,0,0,0.3);
+  box-shadow: 0 0 40px var(--glow), 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 .bento-card .card-icon {
@@ -668,41 +671,6 @@ h1, h2, h3, h4 {
   transition: all var(--duration) var(--ease);
 }
 
-
-/* --- Pricing --- */
-.product-pricing {
-  margin-bottom: var(--space-lg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--space-xs);
-}
-
-.price {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text);
-  letter-spacing: -0.02em;
-}
-
-.price-desc {
-  font-size: 0.9rem;
-  color: var(--text-tertiary);
-}
-
-.card-price {
-  display: block;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: var(--text-secondary);
-  margin-bottom: var(--space-xs);
-}
-
-.trial-text {
-  margin-top: var(--space-md);
-  font-size: 0.85rem;
-  color: var(--text-tertiary);
-}
 
 
 /* ==========================================================================
